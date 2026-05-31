@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <title>تسجيل الدخول </title>
+</head>
+<body>
+    <div class="container py-5 ">
+        <form action="">
+            <div class="w-75 py-5 px-3 m-auto form-container ">
+                <h2 class="mb-4 fs-1 fw-bold text-center text-info" id="heading">سجل دخولك الأن</h2>
+                <div class="mb-3 ">
+                    <label for="loginEmail" class="text-white mb-2" id="mail">البريد الالكتروني : </label>
+                    <input type="email" class="form-control bg-transparent text-white" id="loginEmail" >
+                </div>
+                <div class="mb-3">
+                    <label for="loginPassword" class="text-white mb-2" id="passwordd">كلمة المرور : </label>
+                    <input type="password" class="form-control bg-transparent text-white mb-5" id="loginPassword" >
+                </div>
+                <p class="text-white d-none text-center bg-danger" id="fillMsg">أدخل البيانات كاملة</p>
+                <p class="text-white d-none text-center bg-danger" id="wrongMsg">خطأ في الريد الالكتروني أو كلمة المرور</p>
+                <a class="btn btn-outline-info w-100 mb-3 text-decoration-none fs-5" id="loginBtn" onclick="login()">تسجيل الدخول</a>
+                <div class="d-flex justify-content-between btmDiv">
+                    <p class="text-white" id="never">ليس لديك أي بريد الكتروني ؟ <a href="register.html" class="text-white text-decoration-none" id="login">التسجيل</a></p>
+                    <a href="forget.html" class="text-white forgetPass text-decoration-none" id="forget">هل نسيت كلمة مرورك ؟</a>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/login.js"></script>
+</body>
+</html>

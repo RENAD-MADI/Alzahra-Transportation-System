@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <title>الزهراء المثالية لنقل</title>
+</head>
+<body>
+    <!-- Start Header -->
+    <header class="d-flex justify-content-between " id="header">
+        <nav class="navbar navbar-expand-lg bg-main-color flex-fill p-0">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="./Assets/logo/16276ad5-3552-4a99-a548-c9e7cb63f243.jpg" alt="Logo">
+                </a>
+                <button class="navbar-toggler bg-white py-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon m-0"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item mx-2">
+                            <a class="nav-link active" aria-current="page" href="index.html" id="home">الرئيسية</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#booking" id="book">احجز الأن</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#services" id="service">خدمتنا</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#about_us" id="about">حول</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" id="hotel" href="https://www.booking.com/index.ar.html?aid=8055683&sid=46198f023cdd8b2df980b1763ee910ce&srpvid=44be9083eb32013f&click_from_logo=1" target="_blank">حجز فنادق</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#opinions" id="opinion">آراء العملاء</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#Questions" id="questions">أسئلة شائعة</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#Contact" id="contact">اتصل بنا</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="left-header bg-main-color d-flex align-items-center">
+            <div class="container-fluid">
+                <ul class=" mb-2 mb-lg-0 d-flex align-items-center justify-content-end">
+                    <li class="nav-item mx-2">
+                        <a href="profile.html" class="text-white px-0 nav-link">
+                            <i class="fa-solid fa-user"></i>
+                            <span class="me-1" id="profile">الملف الشخصي</span>
+                        </a>
+                    </li>
+                    <li class="nav-item mx-2 d-none" id="navItem1">
+                        <a class="text-white px-0 logoutDiv" onclick="logOut()">
+                            <i class="fa-solid fa-right-from-bracket"></i>
+                            <span class="me-1" id="logout">تسجيل الخروج</span>
+                        </a>
+                    </li>
+                    <li class="nav-item mx-2 d-block" id="navItem2">
+                        <a class="text-white px-0"  href="login.html" >
+                            <i class="fa-solid fa-right-from-bracket"></i>
+                            <span class="me-1" id="login">تسجيل الدخول</span>
+                        </a>
+
+                    </li>
+                  
+                    <li class="language text-white">
+                        <select class="language-select bg-main-color text-white border-0">
+                            <option class="language-option" value="ar" id="arabic">
+                                العربية
+                            </option>
+                            <option class="language-option" value="en">
+                                English
+                            </option>
+                        </select>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <a href="https://wa.me/+966554128325" target="_blank" class="whatsapp-icon">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+    <button id="backToTopBtn" onclick="scrollToTop()">
+        <i class="fa-solid fa-up-long"></i>
+    </button>
+    <!-- End Header -->
+
+    <!-- Start Home -->
+    <div class="home" id="home">
+        <div class="container">
+            <div class="overlay"></div>
+            <div class="info">
+                <div class="right">
+                    <div class="content" id="content">
+                        <span class="fs-3 text-end fw-bold">مرحبا بك في</span>
+                        <h1 class="fw-bold second-color " id="headd">الزهرة المثالية لنقل</h1>
+                    </div>
+                    <ul>
+                        <li class="item fs-5 mb-1">أحصل على وسيلة مواصلاتك بضغطة زر و بدقائق معدودة احجز الآن وادفع عند وصولك.</li>
+                        <li class="item fs-5 mb-1">أختر مدينة الحجز والسيارة المناسبة لك</li>
+                        <li class="item fs-5 mb-1">قم بتسجيل بيانات حجزك</li>
+                        <li class="item fs-5 mb-1">أرسل لنا تذكرة الطيران أو الموقع لتأكيد الحجز</li>
+                        <li class="item fs-5">للحجز السريع <a href="#booking" class="second-color">اضغط هنا</a></li>
+                    </ul> 
+                </div>
+            </div>
+        </div>
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/Assets/images/w1.jpg" class="d-block w-100" alt="car image">
+                </div>
+                <div class="carousel-item">
+                    <img src="/Assets/images/w2.jpg" class="d-block w-100" alt="car image">
+                </div>
+                <div class="carousel-item">
+                    <img src="/Assets/images/w3.jpg" class="d-block w-100" alt="car image">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Home -->
+
+    <!-- Start Book now -->
+    <div class="booking" id="booking">
+        <div class="heading">
+            <h1 class="text-center fw-bold pb-4 position-relative fs-2">احجز الأن</h1>
+        </div>
+        <div class="container" id="card-section">
+            <p class="text-center main-color fs-5">من فضلك اختار المكان الذي تريد ان تذهب الية:</p>
+            <div class="places d-flex align-content-center justify-content-center my-4 gap-2">
+            </div>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4" id="data-content-car">
+            </div>
+        </div>
+    </div> 
+
+  
+    <!-- End Book now -->
+
+    <!-- Start Our services -->
+     <section id="services">
+        <div class="services bg-main-color py-5 mb-3" >
+            <div class="heading">
+                <h1 class="text-center fw-bold pb-4 position-relative fs-2 text-white" id="services_heading">خدماتنا</h1>
+            </div>
+            <div class="container py-3">
+                <div class="content d-flex justify-content-center align-items-center flex-wrap gap-2">
+                    <p  class="paragraph" id="service2"> جميع الكباتن مدربين على أفضل مستوى في التعامل الراقي مع العملاء وذوي أخلاق وسمعة حسنة في التعامل .</p>
+                    <p  class="paragraph" id="service1">سيارات صغيرة وكبيرة جديدة اخر الموديلات ومزودة بعازل حراري وخالية من رائحة التدخين.</p>
+                    <p  class="paragraph" id="service4">خدمة انترنت واي فاي مجانية طوال الطريق داخل المركبة.</p>`
+                    <p  class="paragraph" id="service3"> قيادة آمنة وهادئة طوال الطريق.</p>
+                    <p  class="paragraph" id="service6"> نضمن لك بأننا أفضل سعر مواصلات مع وجود الخدمات اعلاه</p>
+                    <p  class="paragraph" id="service5">الالتزام بالمواعيد.</p>
+                </div>
+            </div>
+        </div>
+
+     </section>
+   
+    <!-- End Our services -->
+
+    <!-- Start About -->
+     <section id="about_us">
+        <div class="about py-5" id="about_us">
+            <div class="heading">
+                <h1 class="text-center fw-bold pb-4 position-relative fs-2 main-color" id="About">حول</h1>
+            </div>
+            <div class="container py-4">
+                <div class="row">
+                    <div class="col-md-4 content d-flex flex-column">
+                        <div class="icon d-flex gap-2 align-items-center justify-content-center bg-main-color w-100 py-2">
+                            <i class="fas fa-car fs-3 text-white" id="icon1"></i>
+                            <h3 class="text-white" id="head1">سافر براحة</h3>
+                        </div>
+                        <div class="info dark-color p-2 flex-fill" id="para1">
+                            ​​في الزهرة المثالية لنقل، نحن نفخر بتقديم خدمات شاملة لتلبية جميع احتياجاتك مع خدمة عملاء من الدرجة الأولى. هدفنا هو جعل رحلاتك آمنة وبلا مجهود وفي الموعد المحدد
+                        </div>
+                    </div>
+                    <div class="col-md-4 content d-flex flex-column">
+                        <div class="icon d-flex gap-2 align-items-center justify-content-center bg-main-color w-100 py-2">
+                            <i class="fa-solid fa-fire text-white fs-5" id="icon2"></i>
+                            <h3 class="text-white" id="head2">نتوقع الأفضل</h3>
+                        </div>
+                        <div class="info dark-color p-2 flex-fill" id="para2">
+                            من خلال تقديم خدمة استثنائية بدون تفاصيل دون مراقبة ، كنا محظوظين بما يكفي لتطويرنا كمزود الزهرة المثالية لنقل في المنطقه.
+                        </div>
+                    </div>
+                    <div class="col-md-4 content d-flex flex-column">
+                        <div class="icon d-flex gap-2 align-items-center justify-content-center bg-main-color w-100 py-2">
+                            <div class="img">
+                                <img src="./Assets/icons/man-thinking.png" class="w-100" alt="icon-thinking" id="icon3">
+                            </div>
+                            <h3 class="text-white" id="head3">لماذا أخترتنا؟</h3>
+                        </div>
+                        <div class="info dark-color p-2  flex-fill special">
+                            <ul>
+                                <li id="txt1">خدمة عملاء من الدرجة الأولى</li>
+                                <li id="txt2">سيارات حديثه ونظيفة وذات صيانة جيدة</li>
+                                <li id="txt3">الاستخدام المبتكر للتكنولوجيا</li>
+                                <li id="txt4">أقل سعر في حجز المركبات مقارنة بشركات أخرى.</li>
+                            </ul>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- End About -->
+    <!-- Start Customer opinions -->
+     <section id="opinions">
+        <div class="opinions bg-main-color py-5" id="opinions">
+            <div class="heading">
+                <h1 class="text-center fw-bold pb-4 position-relative fs-2 text-white" id="Opinion">آراء العملاء</h1>
+            </div>
+            <div class="container py-4">
+                <div class="slider">
+                    <div class="slide active">
+                        <img src="./Assets/icons/user-profile.avif" alt="Person 1">
+                        <div class="details">
+                            <h2 id="name">’’ علي محمد عبدالله ’’</h2>
+                            <p id="description">’’ التزام السائق وحضورة بالوقت المحدد.. نظافة المركبة والاهتمام بها.. شكرا جزيلا. ’’</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="./Assets/icons/user-profile.avif" alt="Person 2">
+                        <div class="details">
+                            <h2 id="name1">’’ حنين عامر أحمد ’’</h2>
+                            <p id="description1">’’ اول تجربة مع الزهرة المثالية لنقل ، السائق كان جدا محترم و انا جدا راضية عن مستوى الخدمة. اتمنى لكم دوام التوفيق. ’’</p>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+
+     </section>
+    
+    <!-- End Customer opinions -->
+
+    <!-- Start Frequently Asked Questions -->
+     <section id="Questions">
+        <div class="questions py-5" id="Questions">
+            <div class="heading">
+                <h1 class="text-center fw-bold pb-4 position-relative fs-2" id="commonquestions">أسئله شائعة</h1>
+            </div>
+            <div class="container overflow-hidden">
+                <div class="accordion accordion-flush m-auto curser-pointer" id="accordionFlushExample">
+                    <div class="accordion-item mb-2">
+                        <h2 class="accordion-header">
+                        <button class="accordion-button collapsed main-color fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne" id="Book">
+                            كيف يمكنني الحجز ؟
+                        </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <ul>
+                                    <li id="itm1">يمكنك الحجز معنا بكل سهولة</li>
+                                    <li id="itm2"> الموقع الإلكتروني بالنقر على خيار أحجز الآن</li>
+                                    <li id="itm3">وأختيار السيارة المناسبة لميزانيتك وطريقة الدفع المناسبة عند الوصول.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item mb-2">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed main-color fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo" id="how1">
+                                كيف يتم استقبال الضيف من المطار؟
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <ul>
+                                    <li id="itm4">يكون السائق في انتظار العميل أو الضيف في المواقف</li>
+                                    <li id="itm5">لحين يتم استلام الشنط وإنهاء إجراءات الدخول</li>
+                                    <li id="itm6">ويتم استقبالة من بوابة الخروج الرئيسية</li>
+                                    <li id="itm7"> بعد التواصل مع العميل/الضيف</li>
+                                    <li id="itm8">قبل الوصول وتزويدة ببيانات السائق وبيانات ونوع المركبة.</li>
+                                    <li id="itm9">ومن ثم التوجة إلى الفندق/ المنزل المراد الوصول إلية بكل بساطة.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item mb-2">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed main-color fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree" id="how2">
+                                كيف يمكنني الدفع ؟
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <ul>
+                                    <li id="itmm">الدفع عند الوصول</li>
+                                    <li id="two">قد يتم طلب منك عربون مبلغ رمزي لضمان الحجز لإرسال السيارة على موعد الحجز.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item mb-2">
+                        <h2 class="accordion-header">
+                        <button class="accordion-button collapsed main-color fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour" id="how3">
+                            هل توفرون حجز في فنادق مكة ؟
+                        </button>
+                    </h2>
+                    <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <ul>
+                                <li id="twoo">نعم </li>
+                                <li id="three">يمكنك الحجز عبر بوكنج من موقعنا مباشرة بأفضل سعر</li>
+                                <li id="four">او مراسلتنا والحجز عن طريق الواتس اب ( اذا كان حجزك اكثر من يومين بحد أدنى )</li>
+                                <li id="five">يتم توفير أفضل فنادق في مكة المكرمة قرب الحرم</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item mb-2">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed main-color fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive" id="how4">
+                            ماهي موديلات السيارات المتوفرة ؟
+                        </button>
+                    </h2>
+                    <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <ul>
+                                <li id="six"> نوفر خيارات كثيرة للعملاء</li>
+                                <li id="seven">بإمكانك تصفح الفئات في الموقع حيث يتم إرسال نفس السيارة المطلوبة أو يتم ترقية الحجز في حال لم تتوفر السيارة التي تم حجزها بنفس الفئة او أعلى منها لعملائنا مجاناً دون تحمل أي رسوم إضافية</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+    
+                </div>
+            </div>
+            
+        </div>
+
+     </section>
+  
+    <!-- End Frequently Asked Questions -->
+    
+
+    <!-- Start Contact -->
+     <section id="Contact">
+        <div class="contact py-5"  id="Contact">
+            <div class="heading">
+                <h1 class="text-center fw-bold pb-4 position-relative fs-2 " id="conyactUs">تواصل معانا </h1>
+            </div>
+            <div class="container w-75">
+                <div class="icons d-flex justify-content-between align-items-center">
+                    <div class="box d-flex flex-column align-items-center">
+                        <div class="icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div class="text main-color">
+                            <p id="text">المملكة العربية السعودية</p>
+                        </div>
+                        
+                    </div>
+                    <div class="box d-flex flex-column align-items-center">
+                        <div class="icon">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div class="text main-color">
+                            <p> <a href="info@alzahraalmithaliah.com" class="main-color">info@elzahra.com</a> </p>
+                        </div>
+                    </div>
+                    <div class="box d-flex flex-column align-items-center">
+                        <div class="icon">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </div>
+                        <div class="text main-color">
+                            <p>
+                            <a href="https://wa.me/+966554128325" target="_blank" class="main-color">+966554128325</a>
+
+                            </p>
+                        </div>
+                        
+                        
+                    </div>   
+                </div>
+                <div class="d-flex gap-3 mt-5 big" id="scroll-section" >
+                    <div class="w-100 overflow-hidden">
+                        <form class="w-100 form-container">
+                            <input type="text" placeholder="الاسم:" class="form-control mb-3 py-2 fw-bold" id="Name">
+                            <input type="email" placeholder="البريد الالكتروني:" class="form-control py-2 fw-bold mb-3" id="Email">
+                            <textarea type="text" placeholder="نص الرساله :" class="form-control fw-bold py-2 mb-3" cols="15" rows="4" id="Message"></textarea>
+                            <p id="messageAlert" class="text-success d-none text-center mb-2 fs-3" >تم ارسال رسالتك بنجاح</p>
+
+                            <button type="button" class="btn form-control " onclick="messageUser()" ><a  id="sub">ارسال</a></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+     </section>
+    
+    <!-- End Contact -->
+
+
+    <!-- Start Footer -->
+    <footer class=" bg-main-color text-white pt-5 pb-4">
+        <div class="container">
+            <div class="row d-flex align-items-center">
+                <div class="col-md-6 col-sm-5 details">
+                    <div class="logo">
+                        <a href="index.html">
+                            <h1 class=" second-color m-0 fw-bold" id="Placee">الزهرة المثالية لنقل</h1>
+                        </a>
+                    </div>
+                    <div class="about-us ">
+                        <p class="fs-6 " id="desc">تقدم شركتنا خدمات توصيل من مطار جدة الى مكة الحرم منذ العديد من السنوات لتصبح أفضل شركة نقل واستقبال معتمرين من مطار جدة الي الحرم. لقد نجحنا في تلبية رغبات العديد من العملاء, وذلك يرجع الي جودة خدماتنا وأفضل وارخص سعر شركة توصيل من مطار جدة الي مكة, وذلك عن رضاء كامل بخدمتنا التي حصلوا عليها من خلال توصيل من مكة لجدة.</p>
+                    </div>
+                    <div class="location d-flex align-items-center gap-2 my-2">
+                        <i class="fa-solid fa-location-dot fs-5 second-color"></i>
+                        <p id="address"> المملكة العربية السعودية</p>
+                    </div>
+                    <div class="link-social mt-3 d-flex justify-content-start gap-2">
+                        <div>  
+                            <a href="https://www.facebook.com/share/p/QGxWQGcWSEJPAG1q/"><i class="fab fa-facebook-f fs-5"></i></a>
+                        </div>
+                        <div>
+                            <a href="https://x.com/almithalia52037?s=21"> <i class="fab fa-twitter  fs-5"></i></a>
+                        </div>
+                        <div>
+                            <a href="info@alzahraalmithaliah.com"><i class="fa-solid fa-envelope fs-5"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-3">
+                    <ul>
+                        <li class="nav-item mb-1 d-flex align-items-center gap-2">
+                            <i class="fa-solid fa-angles-left"></i><a class="nav-link" href="#booking" id="book2">احجز الأن</a>
+                        </li>
+                        <li class="nav-item mb-1 d-flex align-items-center gap-2">
+                            <i class="fa-solid fa-angles-left"></i><a class="nav-link" href="#services" id="Services">خدمتنا</a>
+                        </li>
+                        <li class="nav-item mb-1 d-flex align-items-center gap-2">
+                            <i class="fa-solid fa-angles-left"></i><a class="nav-link" href="#about_us" id="about2">حول</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-4">
+                    <ul>
+                        <li class="nav-item mb-1 d-flex align-items-center gap-2">
+                            <i class="fa-solid fa-angles-left"></i><a class="nav-link" href="#opinions" id="opinion2">آراء العملاء</a>
+                        </li>
+                        <li class="nav-item mb-1 d-flex align-items-center gap-2">
+                            <i class="fa-solid fa-angles-left"></i><a class="nav-link" href="#Questions" id="questions2">أسئلة شائعة</a>
+                        </li>
+                        <li class="nav-item mb-1 d-flex align-items-center gap-2">
+                            <i class="fa-solid fa-angles-left"></i><a class="nav-link" href="#Contact" id="contact2">اتصل بنا</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="copyright">
+        <div class="container w-100 text-center p-3">
+            <p class="fs-6 text-white fw-bold"  ><span id="footing">حقوق النشر محفوظه لدي</span> <a href="https://wa.me/+966548720537" class="fw-bold" style="color:  #fbde04;">IT.RENADMADI</a><i class="fa-brands fa-gratipay fa-beat-fade mx-2 fs-5"></i></p> 
+        </div>
+    </div>
+    <!-- End Footer -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/booking.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/translations.js"></script>
+</body>
+</html>

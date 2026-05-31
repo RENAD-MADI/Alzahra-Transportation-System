@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/dashboard.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <title>اضافة سيارة </title>
+  <style>
+    
+  </style>
+</head>
+<html>
+  <body style="background-color: #eee;" >
+    <div class="container">
+      <div class="category m-auto d-flex flex-column mt-5 w-50 ">
+        <label for="name" class="fw-bold mb-2"> ادخل تصنيف السيارة:</label>
+        <input type="text"   class="form-control mb-2 " id="name" required>
+        <button type="button" class="btn btn-info d-block m-auto fw-bold mt-3" onclick="addCategory(event)">اضافة تصنيف جديد</button>
+      </div>
+    </div>
+    <div id="carForm" class="d-flex flex-column w-50 m-auto shadow p-3 mt-5 mb-5">
+      <label for="Name" class="fw-bold">الاسم:</label>
+      <input type="text" id="Name" name="name" class="form-control mb-2" required/>
+      <label for="capacity" class="fw-bold">عدد الاشخاص:</label>
+      <input type="number" id="capacity" name="capacity" class="form-control mb-2" required />
+      <label for="description" class="fw-bold">الوصف:</label>
+      <input type="text" id="description" name="description" class="form-control mb-2" required/>
+      <label for="addresses" class="fw-bold">العنوان:</label>
+      <input type="text" id="addresses" name="addresses" class="form-control mb-2" required/>
+      <label for="prices" class="fw-bold">السعر:</label>
+      <input type="number" id="prices" name="prices" class="form-control mb-2" required/>
+      <label for="categoryId" class="fw-bold">الرقم التعريفي للفئة:</label>
+      <select id="categoryId" name="categoryId" class="form-control mb-2 text-black" required>
+        <option value="">اختر فئة</option>
+      </select>
+      <label for="files" class="fw-bold">اختار صورة:</label>
+      <input type="file" id="images" name="carImage" multiple class="mb-2" required><p class="fw-bold">الحد الأقصي اربع صور فقط</p>
+      <button type="button" class="btn btn-info d-block m-auto py-2 px-3 mt-3" onclick="addCar()" id="submit" >اضافه سيارة</button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/addCar.js"></script>
+  </body>
+</html>

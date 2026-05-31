@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <title>Reset Password</title>
+</head>
+<body>
+    
+    <div class="container py-5 ">
+        <div class="w-75 py-5 px-3 m-auto form-container ">
+            <div class="mb-3 ">
+                <label for="resetEmail" class="text-white mb-2" id="mail">البريد الالكتروني : </label>
+                <input type="email" name="resetEmail" class="mb-2 form-control bg-transparent text-white" id="resetEmail">
+                <label for="resetCode" class="text-white mb-2" id="codee">الكود المرسل : </label>
+                <input type="tel" name="resetCode" class="mb-2 form-control bg-transparent text-white" id="resetCode">
+                <label for="resetPassword" class="text-white mb-2" id="newPassword">كلمة المرور الجديدة : </label>
+                <input type="password" name="resetPassword" class="mb-2 form-control bg-transparent text-white" id="resetPassword" >
+                <p class="text-white  mt-3 bg-danger text-center d-none" id="resetMes">الكود ليس صحيحا   </p>
+
+                <button class="btn btn-info mt-3 px-5 fw-bold py-2 d-block" onclick="resetPassword()" id="changePass">حفظ التعديلات</button>
+                <a href="login.html" class="d-none" id="loginBtn">
+                    <button class="btn btn-info mt-3 px-5 fw-bold py-2">تسجيل الدخول</button>
+                </a>
+            </div>
+
+            
+        </div>
+    </div>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/forget.js"></script>
+</body>
+</html>

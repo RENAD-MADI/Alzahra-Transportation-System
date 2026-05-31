@@ -1,0 +1,60 @@
+{
+    "en": {
+        "home": "Home",
+        "book": "Book Now",
+        "service": "Our Services",
+        "about": "About",
+        "hotel": "Hotel Booking",
+        "opinion": "Customer Opinions",
+        "questions": "Common Questions",
+        "contact": "Contact Us",
+        "profile": "Profile",
+        "logout": "Log Out",
+        "Placee":"Alzahra' Almithaliah",
+        "desc":"Our company has been providing delivery services from Jeddah Airport to Mecca Al Haram for many years, becoming the best company for transporting and receiving Umrah pilgrims from Jeddah Airport to Al Haram. We have succeeded in meeting the desires of many customers, due to the quality of our services and the best and cheapest price",
+
+        "address":" Kingdom of Saudi Arabia",
+        "book2":"Booking now  ",
+        "Services":"Our Services",
+        "about2":"About",
+        "opinion2":"Customer Opinions ",
+        "questions2":"Common Questions",
+        "contact2":"Contact Us",
+        "footing": "All rights reserved to",
+        "arabic":"Arabic",
+        "choice":"Choose the payment method",
+        "bankk":"Bank transfer to the institution’s account in the Ahli Bank:IBAN:01400089299",
+        "arrivall":"Payment upon arrival",
+        "subBtn":"Confirm payment "   
+    },
+    "ar": {
+      "home": "الرئيسية",
+      "book": "احجز الأن",
+      "service": "خدمتنا",
+      "about": "حول",
+      "hotel": "حجز فنادق",
+      "opinion": "آراء العملاء",
+      "questions": "أسئلة شائعة",
+      "contact": "اتصل بنا",
+      "profile": "الملف الشخصي",
+      "logout": "تسجيل الخروج",
+      "Placee":"الزهرة المثالية لنقل",
+      "desc":"  تقدم شركتنا خدمات توصيل من مطار جدة الى مكة الحرم منذ العديد من السنوات لتصبح أفضل شركة نقل واستقبال معتمرين من مطار جدة الي الحرم. لقد نجحنا في تلبية رغبات العديد من العملاء, وذلك يرجع الي جودة خدماتنا وأفضل وارخص سعر  .",
+
+      "address":" المملكة العربية السعودية",
+      "book2":"احجز الأن  ",
+      "Services":"خدمتنا",
+      "about2":"حول",
+      "opinion2":"أراء العملاء",
+      "questions2":"أسئلة شائعة",
+      "contact2":"اتصل بنا",
+      "footing": "حقوق النشر محفوظة لدي",
+      "arabic":"العربية",
+      "choice":"اختار طريقة الدفع",
+      "bankk":"تحويل بنكي حساب المؤسسه في البنك الاهلي IBAN:01400089299",
+      "arrivall":"الدفع  عند الوصول",
+      "subBtn":"تأكيد الدفع"
+
+    }
+
+}

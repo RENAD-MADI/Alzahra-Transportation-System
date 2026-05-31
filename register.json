@@ -1,0 +1,55 @@
+{
+    "en": {
+      "head": "Register now ",
+      "namee": " Name:",
+      "usernameAlert": "Must contain at least 3 characters",
+      "emaile": "Email:",
+      "userEmailAlert": "name@example.com ",
+      "pass": " Password :",
+      "userPasswordAlert":"It must contain at least 6 letters or numbers",
+      "agee": "Age:",
+      "userAgeAlert":"Enter your age from 15 to 90 years",
+      "phonee":"Phone:",
+      "userPhoneAlert":"For An Example: 966541231235 ",
+      "addressss":"Address:",
+      "userAddressAlert":"Enter Your Address ",
+      "genderr":" Gender:  ",
+      "maleLabel":"Male",
+      "femaleLabel":"Female",
+      "confirmMsg":" Registered successfully",
+      "accountExistMsg":"This email already exists, enter another email",
+      "tryAgainMsg":"Registration failed, try again",
+      "signupBtn":"sign in",
+      "signin":"sign in ",
+      "haveEmailLabel":"Do you have registered email before?",
+      "loginLink":"sign in"
+   
+    },
+    "ar": {
+      "head": "سجل الأن",
+      "namee": " الاسم:",
+      "usernameAlert": "يجب ان يحتوي علي 3 حروف علي الأقل",
+      "emaile": "البريد الالكتروني:",
+      "userEmailAlert": "name@example.com ",
+      "pass": " كلمة المرور:",
+      "userPasswordAlert": "يجب ان يحتوي علي 6 حروف او ارقام علي الأقل ",
+      "agee": " العمر:",
+      "userAgeAlert": "ادخل عمرك من 15 ل 90 عام ",
+      "phonee": " الجوال:",
+      "userPhoneAlert":" علي سبيل المثال: 966541231235 ",
+      "addressss":"العنوان:  ",
+      "userAddressAlert":" ادخل عنوانك  ",
+      "genderr":" النوع  ",
+      "maleLabel":"ذكر",
+      "femaleLabel":"أنثي",
+      "confirmMsg":" تم التسجيل بنجاح",
+      "accountExistMsg":" هذا البريد الالكتروني موجود بالفعل , ادخل بريد اخر",
+      "tryAgainMsg":"فشل التسجيل , حاول مرة اخري ",
+      "signupBtn":"تسجيل الدخول",
+      "signin":"تسجيل الدخول",
+      "haveEmailLabel":"هل لديك بريد مسجل من قبل؟",
+      "loginLink":"تسجيل الدخول"
+   
+    }
+
+}

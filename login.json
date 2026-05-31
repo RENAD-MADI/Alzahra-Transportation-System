@@ -1,0 +1,28 @@
+{
+    "en": {
+        "heading": "Log in now" ,
+        "mail": "E-mail:",
+        "passwordd": "Password:",
+        "fillMsg": "Enter your complete data",
+        "wrongMsg": "Email or password error",
+        "loginBtn": " Log in",
+        "never": "Don't have any email?",
+        "login": " Register",
+        "forget": "Did you forget your password?"
+       
+   
+    },
+    "ar": {
+      "heading": " سجل الدخول الان" ,
+      "mail": " البريد الالكتروني",
+      "passwordd": "كلمة المرور:",
+      "fillMsg": "ادخل بياناتك كاملة",
+      "wrongMsg": "خطأ في الريد الالكتروني أو كلمة المرور ",
+      "loginBtn": "تسجيل الدخول ",
+      "never": "ليس لديك أي بريد الكتروني ؟  ",
+      "login": " التسجيل",
+      "forget": " هل نسيت كلمة مرورك ؟"
+
+    }
+
+}
